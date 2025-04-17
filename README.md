@@ -9,6 +9,8 @@
 
   1. Kubernetes Multi-Cluster
      * [Prerequisites: What is Thanos](thanos/what-is-thanos.md)
+     * [Components](thanos/components.md)
+     * [Thanos Compactor](thanos/compactor.md)
      * [Variante 1: Full Prometheus per Cluster + Thanos sidecar]
      * [Variante 2: Prometheus Agent per Cluster +Thanos ]
    
