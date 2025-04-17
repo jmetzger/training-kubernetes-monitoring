@@ -9,6 +9,7 @@
 
   1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
      * [Recommended: Variant 1: prometheus agent + thanos/grafana stack](prometheus-setups/prometheus-agent-thanos-grafana.md)
+     * [Variant 2: Full prometheus in each cluster with thanos sidecar](prometheus-setups/prometheus-full-sidecar-thanos-grafana.md)
 
   1. Kubernetes Multi-Cluster (using Thanos) 
      * [Prerequisites: What is Thanos](thanos/what-is-thanos.md)
