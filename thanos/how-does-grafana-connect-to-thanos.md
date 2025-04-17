@@ -2,8 +2,7 @@
 
 ## Route 
 
-![Grafana to Thanos Routing](/images/grafana-thanos-route.png)
-
+![image](https://github.com/user-attachments/assets/05eaaecd-4881-468d-89db-2c0d2aa5cc48)
 
 ## Explanation 
 
