@@ -1,10 +1,10 @@
 # What are the components of thanos ? 
 
+## Explanation 
+
 In a **Kubernetes context**, **Thanos** is typically deployed as a set of components (usually as Deployments, StatefulSets, and Services), each responsible for extending **Prometheus** to enable **long-term storage, high availability, and global querying**. Here's a breakdown of the **main Thanos components** and how they work **in Kubernetes**:
 
 ---
-
-## Explanation
 
 ### 🚀 **1. Thanos Sidecar**
 - **Runs alongside each Prometheus instance** as a sidecar container.
