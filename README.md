@@ -7,6 +7,9 @@
      * [Prometheus / Grafana Stack installieren](prometheus-grafana/install-with-helm.md)
      * [Prometheus / blackbox exporter](prometheus-grafana/z_blackbox-exporter.md)
 
+  1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
+     * [Recommended: Variant 1: prometheus agent + thanos/grafana stack](prometheus-setups/prometheus-agent-thanos-grafana.md)
+
   1. Kubernetes Multi-Cluster (using Thanos) 
      * [Prerequisites: What is Thanos](thanos/what-is-thanos.md)
      * [Components](thanos/components.md)
