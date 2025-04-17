@@ -36,7 +36,3 @@ Prometheus is great for monitoring, but it has **limitations**:
 | Object Storage       | S3/GCS/MinIO for infinite retention      |
 | Downsampling         | Better performance for old data          |
 | Alerting Rules       | Centralized alerting with Thanos Ruler   |
-
-## Architecture 
-
-![image](https://github.com/user-attachments/assets/90610bd3-c63b-4e62-b03e-41e0eaf4a371)
