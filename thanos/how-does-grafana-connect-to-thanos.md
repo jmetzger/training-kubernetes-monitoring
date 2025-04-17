@@ -2,7 +2,8 @@
 
 ## Route 
 
-![Route](/image/grafana-thanos-route.png)
+![Grafana to Thanos Routing](images/grafana-thanos-route.png)
+
 
 ## Explanation 
 
