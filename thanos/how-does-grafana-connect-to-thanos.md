@@ -1,5 +1,9 @@
 # How does Grafana connect to Thanos ? 
 
+## Route 
+
+![Route](/image/grafana-thanos-route.png)
+
 ## Explanation 
 
 ### 📊 Grafana connects to **Thanos Query**
