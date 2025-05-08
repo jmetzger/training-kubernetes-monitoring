@@ -1,12 +1,31 @@
 # rate() - Wie funktioniert das ? 
 
-## Für welche metric typen:
+## Kurzbeschreibung
 
-  * Ja, rate() in PromQL funktioniert nur sinnvoll mit Metriken vom Typ counter.
+ * `rate()` ist eine **Funktion in PromQL** – genauer gesagt eine sogenannte **Range-Vector-Funktion**.
 
-## Remark 
+### Details zu `rate()`
 
-  * Ich habe hier mal ein ganz einfach Beispiel rausgesucht
+* **Typ:** Funktion
+* **Input:** Ein **Range Vector** (also z. B. `metric[5m]`)
+* **Zweck:** Berechnet die **durchschnittliche Änderungsrate pro Sekunde** eines Counters über das angegebene Zeitfenster.
+
+### Beispiel:
+
+```promql
+rate(http_requests_total[5m])
+```
+
+→ `http_requests_total[5m]` ist der Range Vector: alle Werte dieser Zeitreihe der letzten 5 Minuten.
+→ `rate()` berechnet aus diesen Werten die durchschnittliche Steigerung pro Sekunde (unter Berücksichtigung von Counter-Resets).
+
+---
+
+### Kurz gesagt:
+
+✅ `rate()` ist eine eingebaute **PromQL-Funktion**
+✅ funktioniert **nur mit Range Vectors**,
+✅ und ist **für Counter-Metriken gedacht**.
 
 ## 🧁 Stell dir vor:
 
