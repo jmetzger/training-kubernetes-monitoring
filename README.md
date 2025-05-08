@@ -18,5 +18,9 @@
 
   1. Kubernetes Multi-Cluster (using Cortex - multi-tenant tsdb's) 
    
-  
+
+  ## Backlog / Sammlung 
+
+  1. Prometheus
+     * [Prometheus-Metriktypen (engl. metric types)](prometheus/metrics/overview.md)
 
