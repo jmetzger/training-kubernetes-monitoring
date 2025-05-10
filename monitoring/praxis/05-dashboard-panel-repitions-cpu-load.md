@@ -17,7 +17,7 @@
 
   * Achtung: Beim Speichern des Dashboards anderen Namen und andere ID angeben
     (einfach die uid um +1 hochzählen), vorher: change uid anklicken 
-  * dann speichern
+  * dann **Import** - Button
 
 
 
