@@ -19,6 +19,16 @@
     (einfach die uid um +1 hochzählen), vorher: change uid anklicken 
   * dann **Import** - Button klicken
 
+## Schritt 4: Dashboard ausdünnen (alle nicht benötigte Panels raus)
 
+  * Wir löschen alles ausser das CPU - Panel 
+
+  1. Oben rechts neben **Settings** auf **Edit** klicken
+  1. Neben dem jeweiligen Panel auf die DREI-PUNKTE klicken:
+
+![image](https://github.com/user-attachments/assets/18988150-2ff3-45a2-8938-fac448e6c7a1)
+
+  1. Auf Remove klicken
+  1. Alle nicht benötigen Rows löschen (Neben der Row auf den Papierkorb) 
 
 
