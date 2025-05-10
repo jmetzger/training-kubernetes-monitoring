@@ -1,6 +1,5 @@
-Selbstverständlich! Hier ist die aktualisierte Schritt-für-Schritt-Anleitung für dein Kubernetes-Training, bei der der **Ingress**-Block ans Ende verschoben wurde. Jeder Schritt ist mit `nano <dateiname>` und anschließendem `kubectl apply -f .` versehen, um die Anwendung der Ressourcen zu erleichtern.
+# Exercise: Nginx mit ServiceMonitor anlegen 
 
----
 
 ## 🔧 Vorbereitung: Verzeichnisstruktur anlegen
 
