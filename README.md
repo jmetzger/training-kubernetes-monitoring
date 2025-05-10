@@ -11,7 +11,7 @@
      * [Prometheus / blackbox exporter](prometheus-grafana/z_blackbox-exporter.md)
     
   1. Prometheus Praxis
-    * [Nginx mit ServiceMonitor und export konfigurieren (sidecar)]()
+     * [Nginx mit ServiceMonitor und export konfigurieren (sidecar)](monitoring/praxis/03-nginx-servicemonitor.md)
 
   1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
      * [Recommended: Variant 1: prometheus agent + thanos/grafana stack](prometheus-setups/prometheus-agent-thanos-grafana.md)
