@@ -1,5 +1,9 @@
 # Exercise: Nginx mit ServiceMonitor anlegen 
 
+## Voraussetzung:
+
+  * kube-prometheus-stack muss installiert sein
+  * 
 
 ## 🔧 Vorbereitung: Verzeichnisstruktur anlegen
 
