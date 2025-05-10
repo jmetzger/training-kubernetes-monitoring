@@ -303,6 +303,10 @@ Oben rechts auf neues Dashboard erstellen klicken
 
 ![image](https://github.com/user-attachments/assets/c70bc905-7196-4b73-a625-cbd9132530a3)
 
+  * Damit immer der pod angezeigt wird, trage dies als custom label unter der query ein
+
+![image](https://github.com/user-attachments/assets/32551d48-76be-4fe8-af69-a3df9b348a5b)
+
 
 
 
