@@ -232,8 +232,7 @@ kubectl -n web-demo describe smon nginx
 ## 7. Targets finden (in web gui) 
 
 ```
-# im Browser öffnen
+# im Browser öffnen und nach web-demn suchen 
 https://prometheus.<du>.do.t3isp.de/targets
-
 # oder über tunnel
 ```
