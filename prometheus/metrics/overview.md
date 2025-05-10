@@ -102,4 +102,3 @@ Ein Summary enthält direkt **Perzentile**, allerdings:
 
 ---
 
-Wenn du magst, kann ich dir ein kleines Demo-Projekt mit allen Typen in einer Beispiel-Go-App zeigen. Möchtest du das?
