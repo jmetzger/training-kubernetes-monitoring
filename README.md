@@ -2,6 +2,12 @@
 
 ## Agenda 
 
+  1. Kubernetes Monitoring Grundlagen
+     * [Abgrenzung zu Observeability](/monitoring/grundlagen/monitoring-vs-observeability.md)
+  
+      
+
+
   1. Kubernetes Monitoring (Single Cluster / Instance of Prometheus) 
      * [Prometheus Monitoring Server (Overview)](prometheus/overview.md)
      * [Prometheus / Grafana Stack installieren](prometheus-grafana/install-with-helm.md)
