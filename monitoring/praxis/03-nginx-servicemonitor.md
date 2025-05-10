@@ -185,7 +185,10 @@ spec:
 kubectl apply -f .
 ```
 
----
+```
+# Welches Label prometheus hat, könnt ihr prüfen
+kubectl -n monitoring get pods -l release=prometheus
+```
 
 ## 6. Ingress
 
