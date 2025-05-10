@@ -5,12 +5,9 @@
   1. Kubernetes Monitoring Grundlagen
      * [Abgrenzung zu Observeability](/monitoring/grundlagen/monitoring-vs-observeability.md)
   
-      
-
-
   1. Kubernetes Monitoring (Single Cluster / Instance of Prometheus) 
      * [Prometheus Monitoring Server (Overview)](prometheus/overview.md)
-     * [Prometheus / Grafana Stack installieren](prometheus-grafana/install-with-helm.md)
+     * [Prometheus / Grafana Stack installieren (advanced)](prometheus-grafana/prometheus-grafana/install-with-helm-letsencrypt-basic-auth.md)
      * [Prometheus / blackbox exporter](prometheus-grafana/z_blackbox-exporter.md)
 
   1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
