@@ -236,3 +236,38 @@ kubectl -n web-demo describe smon nginx
 https://prometheus.<du>.do.t3isp.de/targets
 # oder über tunnel
 ```
+
+### 8. mit promql abfragen
+
+```
+1. Zunächst finden wir heraus, welche labels diese pods haben (siehe Punkt 7)
+das sieht nach job="nginx" aus
+
+Jeder ServiceMonitor (z.B. unser, der nginx heisst), wird beim Scrapen als job="<serviceMonitorName>"
+automatisch von Kubernetes abgefragt.
+```
+
+```
+d.h. wir können Fragen
+
+# (gilt dann für alle pods) 
+up
+# gilt für alle pods in einen für bestimmten job  
+up {job="nginx"}
+# gilt für alle pods in einem bestimmten namespace
+up {namespace="web-demo"}
+# and combining all endpoints with job=nginx in the namespace web-demo
+up {job="nginx",namespace="web-demo"}
+```
+
+```
+#Pratical - on: https://prometheus1.tln1.do.t3isp.de/query
++ enter:
+up {"job=nginx"} + Press "Execute"
+```
+
+![image](https://github.com/user-attachments/assets/a946076e-9a62-4dd3-a468-ed6653524616)
+
+```
+You can not also click on Graph
+```
