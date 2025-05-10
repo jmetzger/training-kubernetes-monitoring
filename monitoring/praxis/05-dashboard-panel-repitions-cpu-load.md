@@ -78,9 +78,34 @@
     Durch Multi-Value:
     Dadurch lässt sich nicht nur eine Instance (ein Server), sondern mehrere auswählen
 ```
+![image](https://github.com/user-attachments/assets/382f8e66-e3e3-47f4-a60f-b6afa56727b0)
 
 
- 
+![image](https://github.com/user-attachments/assets/f1b18383-493f-4c2c-ad05-4d9c47837b28)
+
+  5. Problem - no data beheben
+
+ * Durch umstellung auf Multi-Value muss die Query geändert werden.
+ * Es darf nicht mehr explizit nach einer instance gefragt werden, sondern mit regex
+
+```
+# Vorher
+(
+  (1 - sum without (mode) (rate(node_cpu_seconds_total{job="node-exporter", mode=~"idle|iowait|steal", instance="$instance", cluster="$cluster"}[$__rate_interval])))
+/ ignoring(cpu) group_left
+  count without (cpu, mode) (node_cpu_seconds_total{job="node-exporter", mode="idle", instance="$instance", cluster="$cluster"})
+)
+```
+
+```
+# Ändern in
+(
+  (1 - sum without (mode) (rate(node_cpu_seconds_total{job="node-exporter", mode=~"idle|iowait|steal", instance=~"$instance", cluster="$cluster"}[$__rate_interval])))
+/ ignoring(cpu) group_left
+  count without (cpu, mode) (node_cpu_seconds_total{job="node-exporter", mode="idle", instance=~"$instance", cluster="$cluster"})
+)
+
+```
 
  
 
