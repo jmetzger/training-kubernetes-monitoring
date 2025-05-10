@@ -281,4 +281,28 @@ You can not also click on Graph
 
 ### Step 1: New Dashboard 
 
+```
+Oben rechts auf neues Dashboard erstellen klicken
+-->
+```
+![image](https://github.com/user-attachments/assets/150b70df-9ef3-4014-b5a4-69ae7f62af06)
+
+### Step 2: Add Visualization 
+
+![image](https://github.com/user-attachments/assets/b91e2df1-b11a-4d19-8b06-99ef1de66b08)
+
+### Step 3: Datasource -> Prometheus (Default) auswählen / Visualisation + Query definieren
+
+  * DataSource Prometheus is bereits vorkonfiguriert
+
+![image](https://github.com/user-attachments/assets/c1c2af0b-dfda-4e31-9470-5864dd630cbc)
+
+  * Choose Visualisation ( Stat, Gauge, or Bar Gauge )
+  * Set the query: up | job | nginx
+  * run query
+
+![image](https://github.com/user-attachments/assets/c70bc905-7196-4b73-a625-cbd9132530a3)
+
+
+
 
