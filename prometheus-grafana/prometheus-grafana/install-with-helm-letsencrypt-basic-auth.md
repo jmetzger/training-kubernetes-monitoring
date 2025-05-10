@@ -2,6 +2,12 @@
 
   * using the kube-prometheus-stack (recommended !: includes important metrics)
 
+## Attention: Upgrades and uninstall can be a bit tricky 
+
+  * CRD's need to deleted manually after uninstall
+  * Before Upgrade update the CRD's
+  * https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/UPGRADE.md
+
 ## What do we want to do ? 
 
   * We want to protect prometheus with basic-auth
@@ -165,7 +171,7 @@ prometheus-node-exporter:
 
 ```
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
-helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -f monitoring-values.yaml --namespace monitoring --create-namespace --version 71.0.0
+helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -f monitoring-values.yaml --namespace monitoring --create-namespace --version 72.3.0
 ```
 
 ## Step 7: Connect to prometheus from the outside world 
