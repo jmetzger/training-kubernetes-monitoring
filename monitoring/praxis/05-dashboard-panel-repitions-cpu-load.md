@@ -13,4 +13,12 @@
 
 ![image](https://github.com/user-attachments/assets/fe51b22a-9ad1-43ec-a307-5cad58c9fe1d)
 
+## Schritt 3: Dashboard speichern 
+
+  * Achtung: Beim Speichern des Dashboards anderen Namen und andere ID angeben
+    (einfach die uid um +1 hochzählen), vorher: change uid anklicken 
+  * dann speichern
+
+
+
 
