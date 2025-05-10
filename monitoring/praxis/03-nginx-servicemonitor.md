@@ -152,9 +152,41 @@ spec:
 kubectl apply -f .
 ```
 
----
+## 5. Ingress (Optional)
 
-## 5. ServiceMonitor
+```bash
+nano 06-nginx-ingress.yaml
+```
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx
+  namespace: web-demo
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: app.tln1.do.t3isp.de
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: nginx
+            port:
+              number: 80
+```
+
+```bash
+kubectl apply -f .
+```
+
+
+## 6. ServiceMonitor
 
 ```bash
 nano 05-nginx-servicemonitor.yaml
@@ -197,35 +229,11 @@ kubectl -n web-demo get smon nginx
 kubectl -n web-demo describe smon nginx 
 ```
 
-## 6. Ingress
+## 7. Targets finden (in web gui) 
 
-```bash
-nano 06-nginx-ingress.yaml
 ```
+# im Browser öffnen
+https://prometheus.<du>.do.t3isp.de/targets
 
-```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: nginx
-  namespace: web-demo
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-spec:
-  ingressClassName: nginx
-  rules:
-  - host: app.tln1.do.t3isp.de
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: nginx
-            port:
-              number: 80
-```
-
-```bash
-kubectl apply -f .
+# oder über tunnel
 ```
