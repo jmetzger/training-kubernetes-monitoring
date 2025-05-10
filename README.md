@@ -9,6 +9,9 @@
      * [Prometheus Monitoring Server (Overview)](prometheus/overview.md)
      * [Prometheus / Grafana Stack installieren (advanced)](prometheus-grafana/prometheus-grafana/install-with-helm-letsencrypt-basic-auth.md)
      * [Prometheus / blackbox exporter](prometheus-grafana/z_blackbox-exporter.md)
+    
+  1. Prometheus Praxis
+    * [Nginx mit ServiceMonitor und export konfigurieren (sidecar)]()
 
   1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
      * [Recommended: Variant 1: prometheus agent + thanos/grafana stack](prometheus-setups/prometheus-agent-thanos-grafana.md)
