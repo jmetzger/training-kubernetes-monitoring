@@ -186,6 +186,119 @@ https://prometheus.<du>.t3isp.de
 https://grafana.<du>.t3isp.de
 ```
 
+## Step 9: Connect to alertmanager from the outside world 
+
+```
+https://alertmanager.<du>.t3isp.de
+```
+
+## Attention: No persistent storage 
+
+  * In this chart prometheus by default uses EmptyDir, only exists as long as pod runs
+  * Retention time: is 10d currenty, so this long will data be there 
+
+```
+  prometheus-prometheus-kube-prometheus-prometheus-db:
+    Type:       EmptyDir (a temporary directory that shares a pod's lifetime)
+    Medium:
+    SizeLimit:  <unset>
+```
+
+### Set to storageclass 
+
+```
+nano monitoring-values.yaml
+```
+
+```
+grafana:
+  fullnameOverride: grafana
+  enabled: true
+  adminUser: admin
+  adminPassword: "yourStrongPassword"
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - grafana.<du>.do.t3isp.de
+    path: /
+    pathType: Prefix
+    tls:
+      - hosts:
+          - grafana.<du>.do.t3isp.de
+        secretName: grafana-tls
+
+prometheus:
+  fullnameOverride: prometheus 
+## That is the storageclass part
+  prometheusSpec:
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 20Gi
+          storageClassName: "standard"
+######
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/auth-type: basic
+      nginx.ingress.kubernetes.io/auth-secret: prometheus-basic-auth
+      nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - prometheus.<du>.do.t3isp.de
+    paths:
+      - /
+    pathType: Prefix
+    tls:
+      - hosts:
+          - prometheus.<du>.do.t3isp.de
+        secretName: prometheus-tls
+
+# Optional: Persist data
+prometheusOperator:
+  admissionWebhooks:
+    enabled: true
+
+alertmanager:
+  fullnameOverride: alertmanager
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/auth-type: basic
+      nginx.ingress.kubernetes.io/auth-secret: prometheus-basic-auth
+      nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - alertmanager.<du>.do.t3isp.de
+    paths:
+      - /
+    pathType: Prefix
+    tls:
+      - hosts:
+          - alertmanager.<du>.t3isp.de
+        secretName: alertmanager-tls
+
+
+kube-state-metrics:
+  fullnameOverride: kube-state-metrics
+
+prometheus-node-exporter:
+  fullnameOverride: node-exporter
+```
+
+```
+# ausrollen
+helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -f monitoring-values.yaml --namespace monitoring --create-namespace --version 72.3.0
+```
+
 ## References:
 
   * https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/README.md
