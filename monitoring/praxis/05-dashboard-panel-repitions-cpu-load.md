@@ -107,5 +107,27 @@
 
 ```
 
+  * Dashboard speichern
+
+## Schritt 5: Auf panel repitions umstellen 
+
+  1. Bei den Panel Settings runterscrollen
+
+![image](https://github.com/user-attachments/assets/ee679e09-de0f-471d-9324-2de4398c89b8)
+
+
+  2. ... und instance auswählen
+
+![image](https://github.com/user-attachments/assets/400c56dc-c97c-4c55-84f0-23e881e93384)
+
+  3. Max per row: auf 2 stellen
+
+  4. Dashboard speichern
+
+## Schritt 6: Testen: Dashboard muss nochmal neu geladen zu werden 
+
+  1. Auf Back to Dashboard klicken
+  2. Die neue Ausgabe sollte erscheinen (evtl. oben bei instances nochmal alle auswählen)
+
  
 
