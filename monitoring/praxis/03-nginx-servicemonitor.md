@@ -261,6 +261,11 @@ up {job="nginx",namespace="web-demo"}
 ```
 
 ```
+# Regular Expressions also work:
+up{namespace="web-demo", pod=~"nginx-.*"}
+```
+
+```
 #Pratical - on: https://prometheus1.tln1.do.t3isp.de/query
 + enter:
 up {"job=nginx"} + Press "Execute"
@@ -271,3 +276,9 @@ up {"job=nginx"} + Press "Execute"
 ```
 You can not also click on Graph
 ```
+
+## 9. In Grafana ein Dashboard erstellen 
+
+### Step 1: New Dashboard 
+
+
