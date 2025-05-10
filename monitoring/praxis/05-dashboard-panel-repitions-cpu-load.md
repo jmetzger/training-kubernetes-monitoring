@@ -64,21 +64,21 @@
 ## Schritt 7: Variable "instance" auf Multi-Auswahl ändern 
 
   1. Unter settings: siehe 6.
-  1. instance anklicken
+  2. instance anklicken
 
 ![image](https://github.com/user-attachments/assets/bb57321e-6529-40f8-98de-2544f51d24ff)
 
-  1. Multi-Value anklicken:
+  3. Multi-Value anklicken:
 
 ![image](https://github.com/user-attachments/assets/cf95b185-f536-4c5d-9518-714553802aa9)
 
-  1. Wichtig: Dashboard speichern
+  4. Wichtig: Dashboard speichern
 
 ```
 Durch Multi-Value:
 Dadurch lässt sich nicht nur eine Instance (ein Server), sondern mehrere auswählen 
 
-
+abc
  
 
  
