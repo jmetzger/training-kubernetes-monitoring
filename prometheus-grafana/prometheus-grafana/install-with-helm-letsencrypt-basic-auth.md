@@ -5,6 +5,7 @@
 ## What do we want to do ? 
 
   * We want to protect prometheus with basic-auth
+  * We want to protect alertmanager with basic-auth 
   * We want to use letsencrypt 
 
 ## Prerequisites 
@@ -98,12 +99,12 @@ grafana:
       kubernetes.io/ingress.class: nginx
       cert-manager.io/cluster-issuer: letsencrypt-prod
     hosts:
-      - grafana.<du>.t3isp.de
+      - grafana.<du>.do.t3isp.de
     path: /
     pathType: Prefix
     tls:
       - hosts:
-          - grafana.<du>.t3isp.de
+          - grafana.<du>.do.t3isp.de
         secretName: grafana-tls
 
 prometheus:
@@ -117,13 +118,13 @@ prometheus:
       nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
       cert-manager.io/cluster-issuer: letsencrypt-prod
     hosts:
-      - prometheus.<du>.t3isp.de
+      - prometheus.<du>.do.t3isp.de
     paths:
       - /
     pathType: Prefix
     tls:
       - hosts:
-          - prometheus.<du>.t3isp.de
+          - prometheus.<du>.do.t3isp.de
         secretName: prometheus-tls
 
 # Optional: Persist data
@@ -134,7 +135,23 @@ prometheusOperator:
 alertmanager:
   fullnameOverride: alertmanager
   ingress:
-    enabled: false  # Disable if not needed
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      nginx.ingress.kubernetes.io/auth-type: basic
+      nginx.ingress.kubernetes.io/auth-secret: alertmanager-basic-auth
+      nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+      cert-manager.io/cluster-issuer: letsencrypt-prod
+    hosts:
+      - alertmanager.<du>.do.t3isp.de
+    paths:
+      - /
+    pathType: Prefix
+    tls:
+      - hosts:
+          - alertmanager.<du>.t3isp.de
+        secretName: alertmanager-tls
+
 
 kube-state-metrics:
   fullnameOverride: kube-state-metrics
