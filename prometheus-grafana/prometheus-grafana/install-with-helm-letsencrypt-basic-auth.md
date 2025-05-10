@@ -139,7 +139,7 @@ alertmanager:
     annotations:
       kubernetes.io/ingress.class: nginx
       nginx.ingress.kubernetes.io/auth-type: basic
-      nginx.ingress.kubernetes.io/auth-secret: alertmanager-basic-auth
+      nginx.ingress.kubernetes.io/auth-secret: prometheus-basic-auth
       nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
       cert-manager.io/cluster-issuer: letsencrypt-prod
     hosts:
