@@ -74,9 +74,10 @@
 
   4. Wichtig: Dashboard speichern
 
-  ```bash
+```bash
     Durch Multi-Value:
-    Dadurch lässt sich nicht nur eine Instance (ein Server), sondern mehrere auswählen 
+    Dadurch lässt sich nicht nur eine Instance (ein Server), sondern mehrere auswählen
+```
 
 
  
