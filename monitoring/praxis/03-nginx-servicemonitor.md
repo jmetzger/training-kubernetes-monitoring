@@ -190,6 +190,13 @@ kubectl apply -f .
 kubectl -n monitoring get pods -l release=prometheus
 ```
 
+```
+# Ist der ServiceMonitor konfiguriert ?
+kubectl -n web-demo get servicemonitor nginx
+kubectl -n web-demo get smon nginx
+kubectl -n web-demo describe smon nginx 
+```
+
 ## 6. Ingress
 
 ```bash
