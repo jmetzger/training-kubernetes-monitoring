@@ -46,7 +46,8 @@ nano cert-manager-values.yml
 ```
 
 ```
-installCRDs: true 
+crds:
+  enabled: true
 ```
 
 ```
