@@ -174,6 +174,14 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -f monitoring-values.yaml --namespace monitoring --create-namespace --version 72.3.0
 ```
 
+## Step 6.5 Check, if everything works 
+
+```
+kubectl -n monitoring get pods
+kubectl -n cert-manager get pods
+```
+
+
 ## Step 7: Connect to prometheus from the outside world 
 
 ```
