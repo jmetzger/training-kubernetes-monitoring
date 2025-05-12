@@ -19,6 +19,7 @@
 
   1. Grafana - Alterting and Notifications
      * [Grafana neuen alert anlegen](/monitoring/alerts/neuen-alert-in-grafana-anlegen.md)
+     * [Grafana absence allert konfigurieren - d.h. Service hat keine Pods mehr](monitoring/alerts/grafana/01-absence-nginx.md)
      * [Grafana Notifications/Contact points](/monitoring/alerts/notification-in-grafana.md)
 
   1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
@@ -26,7 +27,7 @@
      * [Variant 2: Full prometheus in each cluster with thanos sidecar](prometheus-setups/prometheus-full-sidecar-thanos-grafana.md)
 
   1. Grafana Loki  
-     * [Installation von Grafana Loki - Singe Instance - für Testing](observeability/loki/install-single-instance.md)
+     * [Installation von Grafana Loki - Single Instance - für Testing](observeability/loki/install-single-instance.md)
      * [Datasource in Grafana bereitstellen per helm](observeability/loki/install-single-instance.md)
      * [Wo finde ich Loki in Grafana ?](observeability/loki/where-to-find-loki-in-grafana.md)
 
