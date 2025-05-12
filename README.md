@@ -2,6 +2,9 @@
 
 ## Agenda 
 
+  1. Vorbereitung
+     * [Self-Service Cluster ausrollgen](/monitoring/training-stack/install.md)
+
   1. Kubernetes Monitoring Grundlagen
      * [Abgrenzung zu Observeability](/monitoring/grundlagen/monitoring-vs-observeability.md)
   
