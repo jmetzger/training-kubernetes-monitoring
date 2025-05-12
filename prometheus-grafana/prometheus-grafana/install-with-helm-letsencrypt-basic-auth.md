@@ -58,7 +58,7 @@ crds:
 
 ```
 helm upgrade --install cert-manager jetstack/cert-manager \
-  --namespace cert-manager --create-namespace -f cert-manager-values.yml 
+  --namespace cert-manager --create-namespace --version 1.17.2 -f cert-manager-values.yml 
 ```
 
 ## Step 4: Create ClusterIssuer 
