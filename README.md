@@ -18,7 +18,9 @@
      * [Variant 2: Full prometheus in each cluster with thanos sidecar](prometheus-setups/prometheus-full-sidecar-thanos-grafana.md)
 
   1. Grafana Loki  
-     * [Installation von Grafana Loki - Singe Instance - für Testing](observeability/loki/install-single-instance.md) 
+     * [Installation von Grafana Loki - Singe Instance - für Testing](observeability/loki/install-single-instance.md)
+     * [Datasource in Grafana bereitstellen per helm](observeability/loki/install-single-instance.md)
+     * [Wo finde ich Loki in Grafana ?](observeability/loki/where-to-find-loki-in-grafana.md)
 
   ## Backlog / Sammlung 
 
