@@ -177,19 +177,19 @@ helm upgrade --install prometheus prometheus-community/kube-prometheus-stack -f 
 ## Step 7: Connect to prometheus from the outside world 
 
 ```
-https://prometheus.<du>.t3isp.de
+https://prometheus.<du>.do.t3isp.de
 ```
 
 ## Step 8: Connect to the grafana from the outside world 
 
 ```
-https://grafana.<du>.t3isp.de
+https://grafana.<du>.do.t3isp.de
 ```
 
 ## Step 9: Connect to alertmanager from the outside world 
 
 ```
-https://alertmanager.<du>.t3isp.de
+https://alertmanager.<du>.do.t3isp.de
 ```
 
 ## Attention: No persistent storage 
