@@ -208,6 +208,16 @@ https://prometheus.<du>.do.t3isp.de
 https://grafana.<du>.do.t3isp.de
 ```
 
+```
+# ändern in euer port + teilnehmer
+# d.h. z.B. 3000 + tln1 = 3001 statt 3010 
+kubectl -n monitoring port-forward deploy/grafana 3010:3000 & 
+# if on remote - system do a ssh-tunnel 
+# ssh -L 3010:127.0.0.1:3010 user@remote-ip 
+
+```
+
+
 ## Step 9: Connect to alertmanager from the outside world 
 
 ```
