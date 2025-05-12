@@ -1,4 +1,4 @@
-# Neuen Alert in Grafana anlegen 
+# Neuen Alert in Grafana anlegen und testen 
 
 ## Voraussetzung
 
@@ -58,13 +58,19 @@ team -> saas
   * Contact Point auswählen
   * In unserem Beispiel nehmen wir Slack
 
-## Schritt 8:  Save rule and exit 
+## Schritt 8: Save rule and exit 
 
   * Button oben rechts klicken
 
 ![image](https://github.com/user-attachments/assets/e0305e06-10a8-4cfb-8c6d-fc70cf629b4a)
 
- 
 
+## Schritt 9: Testen:
 
+  * deployment löschen und im interface nachschauen 
+
+```
+kubectl -n web-demo get deploy nginx
+kubectl -n web-demo delete deploy nginx
+```
 
