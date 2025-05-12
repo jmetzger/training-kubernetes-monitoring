@@ -34,3 +34,32 @@ Safe rule and exit
   1. Erst pending (dauert einen Moment)
   2. Dann firing und es kommt ein Benachrichtigung per Slack 
 
+## ✅ Grafana Unified Alert Example: "No Data" for a Job
+
+### 📌 Use the `absent()` function
+
+Grafana can alert when `absent(up{job="myjob"})` returns something — meaning no data is present.
+
+### 🎯 Step-by-step (in Grafana UI)
+
+1. **Go to Alerting → Alert Rules**
+2. Click **"Create alert rule"**
+3. Set **Data source** to your **Prometheus**
+4. Add a **query** like this:
+
+```promql
+absent(up{job="myjob"})
+```
+
+5. In **Conditions**, set:
+
+   * **WHEN**: `Query (A)` `returns a number`
+   * **IS ABOVE**: `0`
+
+   This works because `absent()` returns `1` if the series is absent.
+
+6. Under **Alert Details**, give it a name like:
+   `No data for job "myjob"`
+
+7. Configure **Contact Points**, **Labels**, etc.
+
