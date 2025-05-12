@@ -1,5 +1,6 @@
 # Self-Service Stack ausrollen (pro Teilnehmer) 
 
+  * ausgerollt mit terraform (binary ist installiert) - snap install --classic terraform 
   * beinhaltet
       1. 1 controlplane
       1. 2 worker nodes
