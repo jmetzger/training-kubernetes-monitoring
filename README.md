@@ -19,7 +19,8 @@
 
   1. Grafana - Alterting and Notifications
      * [Grafana neuen alert anlegen](/monitoring/alerts/neuen-alert-in-grafana-anlegen.md)
-     * [Grafana absence allert konfigurieren - d.h. Service hat keine Pods mehr](monitoring/alerts/grafana/01-absence-nginx.md)
+     * [Grafana absence alert konfigurieren - d.h. Service hat keine Pods mehr](monitoring/alerts/grafana/01-absence-nginx.md)
+     * [Grafana alert, >= pod aus replicaset nicht erreichbar](monitoring/alerts/grafana/02-replicaset-3-not-ready.md)
      * [Grafana Notifications/Contact points](/monitoring/alerts/notification-in-grafana.md)
 
   1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
