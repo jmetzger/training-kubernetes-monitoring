@@ -19,5 +19,18 @@ kubectl -n web-demo delete deploy nginx
 
 ## Click on 
 
+```
+Preview and alert condition
+```
 
+## Safe and exit rules 
+
+```
+Safe rule and exit 
+```
+
+## Alert ausklappen und warten bis er feuert 
+
+  1. Erst pending (dauert einen Moment)
+  2. Dann firing und es kommt ein Benachrichtigung per Slack 
 
