@@ -181,6 +181,16 @@ kubectl -n monitoring get pods
 kubectl -n cert-manager get pods
 ```
 
+```
+# ein neue Ressource cert-manager
+# True ? 
+kubectl get clusterissuer
+kubectl -n monitoring get certicaterequests
+# Alertmanager has a problem
+kubectl -n monitoring describe certificaterequests alertmanager-tls-1 
+
+```
+
 
 ## Step 7: Connect to prometheus from the outside world 
 
