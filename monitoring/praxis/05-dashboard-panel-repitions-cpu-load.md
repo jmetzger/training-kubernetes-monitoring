@@ -109,7 +109,7 @@
 
   * Dashboard speichern
 
-## Schritt 5: Auf panel repitions umstellen 
+## Schritt 5: Auf panel repetitions umstellen 
 
   1. Bei den Panel Settings runterscrollen
 
