@@ -246,7 +246,11 @@ kubectl -n web-demo describe smon nginx
 ```
 # im Browser öffnen und nach web-demn suchen 
 https://prometheus.<du>.do.t3isp.de/targets
-# oder über tunnel
+
+# Dann menü links oben ausklappen, ganz runter scrollen
+# serviceMonitor/web-demo/nginx/0 
+# oder
+https://prometheus.tln10.do.t3isp.de/targets?pool=serviceMonitor%2Fweb-demo%2Fnginx%2F0
 ```
 
 ### 9. mit promql abfragen
