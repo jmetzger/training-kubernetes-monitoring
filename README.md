@@ -10,6 +10,7 @@
   
   1. Kubernetes Monitoring (Single Cluster / Instance of Prometheus) 
      * [Prometheus Monitoring Server (Overview)](prometheus/overview.md)
+     * [Prometheus - Achtung bitte kein prometheus agent](prometheus/achtung-bitte-kein-prometheus-agent.md)
      * [Prometheus / Grafana Stack installieren (advanced)](prometheus-grafana/prometheus-grafana/install-with-helm-letsencrypt-basic-auth.md)
      * [Prometheus / blackbox exporter](prometheus-grafana/z_blackbox-exporter.md)
     
