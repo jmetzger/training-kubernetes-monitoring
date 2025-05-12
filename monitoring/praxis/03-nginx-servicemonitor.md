@@ -284,7 +284,7 @@ up{namespace="web-demo", pod=~"nginx-.*"}
 ```
 #Pratical - on: https://prometheus1.tln1.do.t3isp.de/query
 + enter:
-up {"job=nginx"} + Press "Execute"
+up {job="nginx"} + Press "Execute"
 ```
 
 ![image](https://github.com/user-attachments/assets/a946076e-9a62-4dd3-a468-ed6653524616)
