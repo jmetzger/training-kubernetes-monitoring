@@ -152,7 +152,19 @@ spec:
 kubectl apply -f .
 ```
 
-## 5. Ingress (Optional)
+## 5. Verbindung testen
+
+```
+kubectl run -it --rm podtest --image=busybox
+```
+
+```
+# in der bash
+wget -O - http://nginx.web-demo:9113/metrics 
+exit
+```
+
+## 6. Ingress (Optional)
 
 ```bash
 nano 06-nginx-ingress.yaml
@@ -186,7 +198,7 @@ kubectl apply -f .
 ```
 
 
-## 6. ServiceMonitor
+## 7. ServiceMonitor
 
 ```bash
 nano 05-nginx-servicemonitor.yaml
@@ -229,7 +241,7 @@ kubectl -n web-demo get smon nginx
 kubectl -n web-demo describe smon nginx 
 ```
 
-## 7. Targets finden (in web gui) 
+## 8. Targets finden (in web gui) 
 
 ```
 # im Browser öffnen und nach web-demn suchen 
@@ -237,7 +249,7 @@ https://prometheus.<du>.do.t3isp.de/targets
 # oder über tunnel
 ```
 
-### 8. mit promql abfragen
+### 9. mit promql abfragen
 
 ```
 1. Zunächst finden wir heraus, welche labels diese pods haben (siehe Punkt 7)
@@ -277,7 +289,7 @@ up {"job=nginx"} + Press "Execute"
 You can not also click on Graph
 ```
 
-## 9. In Grafana ein Dashboard erstellen 
+## 10. In Grafana ein Dashboard erstellen 
 
 ### Step 1: New Dashboard 
 
