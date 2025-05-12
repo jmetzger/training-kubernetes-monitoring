@@ -256,7 +256,7 @@ https://prometheus.tln10.do.t3isp.de/targets?pool=serviceMonitor%2Fweb-demo%2Fng
 ### 9. mit promql abfragen
 
 ```
-1. Zunächst finden wir heraus, welche labels diese pods haben (siehe Punkt 7)
+1. Zunächst finden wir heraus, welche labels diese pods haben (siehe Punkt 8)
 das sieht nach job="nginx" aus
 
 Jeder ServiceMonitor (z.B. unser, der nginx heisst), wird beim Scrapen als job="<serviceMonitorName>"
