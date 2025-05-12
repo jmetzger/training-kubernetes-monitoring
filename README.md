@@ -17,16 +17,17 @@
      * [Recommended: Variant 1: prometheus agent + thanos/grafana stack](prometheus-setups/prometheus-agent-thanos-grafana.md)
      * [Variant 2: Full prometheus in each cluster with thanos sidecar](prometheus-setups/prometheus-full-sidecar-thanos-grafana.md)
 
-  1. Kubernetes Multi-Cluster (using Thanos) 
-     * [Prerequisites: What is Thanos](thanos/what-is-thanos.md)
-     * [Components](thanos/components.md)
-     * [Thanos Compactor](thanos/compactor.md)
-
-  1. Kubernetes Multi-Cluster (using Cortex - multi-tenant tsdb's) 
-   
+  1. Grafana Loki  
+     * [Installation von Grafana Loki - Singe Instance - für Testing](observeability/loki/install-single-instance.md) 
 
   ## Backlog / Sammlung 
 
   1. Prometheus
      * [Prometheus-Metriktypen (engl. metric types)](prometheus/metrics/overview.md)
 
+  1. Kubernetes Multi-Cluster (using Thanos) 
+     * [Prerequisites: What is Thanos](thanos/what-is-thanos.md)
+     * [Components](thanos/components.md)
+     * [Thanos Compactor](thanos/compactor.md)
+
+  1. Kubernetes Multi-Cluster (using Cortex - multi-tenant tsdb's) 
