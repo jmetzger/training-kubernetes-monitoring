@@ -156,7 +156,7 @@ alertmanager:
     pathType: Prefix
     tls:
       - hosts:
-          - alertmanager.<du>.t3isp.de
+          - alertmanager.<du>.do.t3isp.de
         secretName: alertmanager-tls
 
 
