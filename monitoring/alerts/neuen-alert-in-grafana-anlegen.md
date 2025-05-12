@@ -46,16 +46,19 @@ team -> saas
 
 ## Schritt 6: Set evaluation behaviour 
 
-  * 
+  * Wie oft soll er überprüfen ? (das kann man nach Umgebung machen, z.B) 
 
-## Schritt 5: Configure notifications 
+![image](https://github.com/user-attachments/assets/9941383c-095c-44a2-95c2-6aa7c3256993)
+
+
+## Schritt 7: Configure notifications 
 
 ### Contact Points 
 
   * Contact Point auswählen
   * In unserem Beispiel nehmen wir Slack
 
-### Save rule and exit 
+## Schritt 8:  Save rule and exit 
 
   * Button oben rechts klicken
 
