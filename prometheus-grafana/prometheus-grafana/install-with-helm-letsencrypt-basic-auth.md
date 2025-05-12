@@ -217,6 +217,8 @@ kubectl -n monitoring port-forward deploy/grafana 3010:3000 &
 
 ```
 
+![image](https://github.com/user-attachments/assets/1f6022d2-b94d-4699-9995-31f3fc13e1b0)
+
 
 ## Step 9: Connect to alertmanager from the outside world 
 
