@@ -17,6 +17,7 @@
      * [Nginx mit ServiceMonitor und export konfigurieren (sidecar)](monitoring/praxis/03-nginx-servicemonitor.md)
 
   1. Grafana - Alterting and Notifications
+     * [Grafana neuen alert anlegen](/monitoring/alerts/neuen-alert-in-grafana-anlegen.md)
      * [Grafana Notifications/Contact points](/monitoring/alerts/notification-in-grafana.md)
 
   1. Kubernetes Multi-Cluster (Types of setups including disadvantags/advantages)
