@@ -189,6 +189,10 @@ kubectl -n monitoring get certicaterequests
 # Alertmanager has a problem
 kubectl -n monitoring describe certificaterequests alertmanager-tls-1 
 
+
+kubectl -n monitoring get certificates
+kubectl -n monitoring describe cert alertmanager-tls 
+
 ```
 
 
