@@ -17,6 +17,9 @@
   1. Prometheus Praxis
      * [Nginx mit ServiceMonitor und export konfigurieren (sidecar)](monitoring/praxis/03-nginx-servicemonitor.md)
 
+  1. Grafana - Dashboards
+     * [Bestehendes Dashboard anpassen](monitoring/praxis/05-dashboard-panel-repitions-cpu-load.md)
+
   1. Grafana - Alterting and Notifications
      * [Grafana neuen alert anlegen](/monitoring/alerts/neuen-alert-in-grafana-anlegen.md)
      * [Grafana absence alert konfigurieren - d.h. Service hat keine Pods mehr](monitoring/alerts/grafana/01-absence-nginx.md)
