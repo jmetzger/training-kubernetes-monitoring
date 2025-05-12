@@ -2,7 +2,7 @@
 
 ## Voraussetzung
 
-  * ServiceMonitor eingerichtet: (Nginx mit ServiceMonitor anlegen)[monitoring/praxis/03-nginx-servicemonitor.md]
+  * ServiceMonitor eingerichtet: [Nginx mit ServiceMonitor anlegen](monitoring/praxis/03-nginx-servicemonitor.md)
 
 ## Basics 
 
