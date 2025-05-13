@@ -93,14 +93,20 @@
 
 ---
 
-### **7. Optional: Variables hinzufügen (Namespace, Pod)**
-
 * Dashboard bearbeiten (Zahnrad oben rechts) > **Variables** > „New“:
 
   * **Name:** `namespace`
   * **Type:** Query
   * **Datasource:** Prometheus
   * **Query:** `label_values(kube_pod_info, namespace)`
+
+  * Gebe eine Liste von Werte (und zwar namespace) zurück aus der Metric kube_pod_info, bei der 
+    job = kube-state-metric ist 
+ 
+![image](https://github.com/user-attachments/assets/e976cb70-39bb-43de-b0b3-9267db49f16c)
+
+
+
 * Genauso für `pod` mit Query: `label_values(kube_pod_info{namespace="$namespace"}, pod)`
 
 ---
