@@ -104,7 +104,6 @@ bloomCompactor:
   replicas: 0
 bloomGateway:
   replicas: 0
-
 ```
 
 ## 🥉 Schritt 3: Installieren 
