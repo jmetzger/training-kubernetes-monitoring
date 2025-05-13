@@ -581,3 +581,7 @@ data:
       "weekStart": ""
     }
 ```
+
+```
+kubectl apply -f .
+```
