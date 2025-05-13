@@ -78,7 +78,17 @@ team -> saas
   * deployment löschen und im interface nachschauen 
 
 ```
+cd
+cd manifests
+cd svc-nginx
+```
+
+```
 kubectl -n web-demo get deploy nginx
+```
+
+```
+nano 03-nginx-deployment-metrics.yaml
 ```
 
 ```
