@@ -40,3 +40,22 @@ spec:
 ```
 kubectl apply -f .
 ```
+
+## Beanchrichtung nach Webhook 
+
+```
+alertmanager:
+  config:
+    global:
+      resolve_timeout: 5m
+    route:
+      group_by: ['alertname']
+      group_wait: 10s
+      group_interval: 1m
+      repeat_interval: 1h
+      receiver: 'test-receiver'
+    receivers:
+    - name: 'test-receiver'
+      webhook_configs:
+      - url: 'http://example.com/'
+```
