@@ -51,6 +51,7 @@ nano values.yaml
 
 ```
 loki:
+  auth_enabled: false
   commonConfig:
     replication_factor: 1
   schemaConfig:
