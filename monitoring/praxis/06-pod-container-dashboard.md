@@ -65,6 +65,7 @@
   ) / (1024 * 1024)
   ```
 * Panel-Typ: **Time series**
+* Legende anzeigen: `{{namespace}} / {{pod}} / {{container}}`
 * Einheit: **MiB**
 * Apply
 
