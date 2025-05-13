@@ -5,6 +5,32 @@
   * Prometheus / Grafana Monitoring - Stack läuft bereits im namespace "monitoring"
   * Prometheus ist als release "prometheus" mit helm installiert 
 
+## Schritt 0: csi ausrollen (nfs-server muss eingerichtet sein) 
+
+```
+helm repo add csi-driver-nfs https://raw.githubusercontent.com/kubernetes-csi/csi-driver-nfs/master/charts
+helm install csi-driver-nfs csi-driver-nfs/csi-driver-nfs --namespace kube-system --version v4.11.0
+```
+
+```
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+  name: nfs-csi
+provisioner: nfs.csi.k8s.io
+parameters:
+  server: 10.135.0.34
+  share: /var/nfs
+reclaimPolicy: Retain
+volumeBindingMode: Immediate
+```
+
+```
+kubectl apply -f .
+```
+
 ## 🥇 Schritt 1: Projektordner anlegen
 
 ```bash
