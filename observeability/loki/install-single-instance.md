@@ -72,7 +72,7 @@ loki:
 
 minio:
   enabled: true
-      
+
 deploymentMode: SingleBinary
 
 singleBinary:
@@ -104,6 +104,7 @@ bloomCompactor:
   replicas: 0
 bloomGateway:
   replicas: 0
+
 ```
 
 ## 🥉 Schritt 3: Installieren 
