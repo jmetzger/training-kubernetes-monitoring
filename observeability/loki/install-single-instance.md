@@ -50,6 +50,11 @@ nano values.yaml
 ```
 
 ```
+# Disabled for testing, otherwice cluster node needs way more than 8 GB of Memory 
+chunksCache:
+  enabled: false
+
+
 loki:
   auth_enabled: false
   commonConfig:
