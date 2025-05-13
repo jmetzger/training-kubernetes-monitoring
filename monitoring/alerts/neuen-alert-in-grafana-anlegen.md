@@ -71,6 +71,56 @@ team -> saas
 
 ```
 kubectl -n web-demo get deploy nginx
+```
+
+```
+# Readiness Check, einbauen, der nicht funktioniert
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  namespace: web-demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: nginx-conf
+          mountPath: /etc/nginx/conf.d/default.conf
+          subPath: default.conf
+        readinessProbe:
+          exec:
+            command:
+            - /bin/false
+          initialDelaySeconds: 5
+          periodSeconds: 10
+      - name: exporter
+        image: nginx/nginx-prometheus-exporter:latest
+        args:
+        - "-nginx.scrape-uri=http://localhost:80/stub_status"
+        ports:
+        - containerPort: 9113
+      volumes:
+      - name: nginx-conf
+```
+
+
+```
+cd
+cd manifests
+cd svcm-nginx
+kubectl -n web-demo apply -f .
 kubectl -n web-demo delete deploy nginx
 ```
 
