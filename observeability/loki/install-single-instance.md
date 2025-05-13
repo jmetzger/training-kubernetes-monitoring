@@ -124,6 +124,23 @@ helm upgrade --install loki grafana/loki \
   -f values.yaml
 ```
 
+## Schritt 4: promtail 
+
+```
+nano promtail-values.yaml
+```
+
+```
+config:
+  clients:
+    - url: http://loki-gateway.loki.svc.cluster.local/loki/api/v1/push
+```
+
+```
+helm install promtail grafana/promtail --namespace loki -f promtail-values.yaml --create-namespace 
+```
+
+
 ## Ref:
 
   * https://grafana.com/docs/loki/latest/setup/install/helm/install-monolithic/
