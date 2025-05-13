@@ -1,5 +1,10 @@
 # Installation von Loki (Achtung: nur Single Instance)  
 
+## Voraussetzung: 
+
+  * Prometheus / Grafana Monitoring - Stack läuft bereits im namespace "monitoring"
+  * Prometheus ist als release "prometheus" mit helm installiert 
+
 ## 🥇 Schritt 1: Projektordner anlegen
 
 ```bash
