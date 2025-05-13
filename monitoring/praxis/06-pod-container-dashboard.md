@@ -107,7 +107,13 @@
 
 
 
-* Genauso für `pod` mit Query: `label_values(kube_pod_info{namespace="$namespace"}, pod)`
+* Jetzt auch für die Query anpassen (Variable verwenden)
+
+```
+max by (pod, container) (kube_pod_container_status_ready{namespace="$namespace"})
+```
+![image](https://github.com/user-attachments/assets/70ac4839-2f61-40d5-992c-7c670aa6c59f)
+
 
 ---
 
