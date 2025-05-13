@@ -135,10 +135,8 @@ spec:
 
 
 ```
-cd
-cd manifests
-cd svcm-nginx
+
 kubectl -n web-demo apply -f .
-kubectl -n web-demo delete deploy nginx
+kubectl -n web-demo get pods 
 ```
 
