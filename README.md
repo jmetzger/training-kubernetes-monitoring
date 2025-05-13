@@ -19,6 +19,7 @@
 
   1. Grafana - Dashboards
      * [Bestehendes Dashboard anpassen](monitoring/praxis/05-dashboard-panel-repitions-cpu-load.md)
+     * [Pod und Container Dashboard](monitoring/praxis/06-pod-container-dashboard.md)
 
   1. Grafana - Alterting and Notifications
      * [Grafana neuen alert anlegen](/monitoring/alerts/neuen-alert-in-grafana-anlegen.md)
