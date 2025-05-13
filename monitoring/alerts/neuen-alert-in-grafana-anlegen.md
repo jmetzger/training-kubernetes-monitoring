@@ -65,7 +65,15 @@ team -> saas
 ![image](https://github.com/user-attachments/assets/e0305e06-10a8-4cfb-8c6d-fc70cf629b4a)
 
 
-## Schritt 9: Testen:
+## Schritt 9: Wo ist der Alert ?
+
+  * alert rules -> app1 -> k8s-pod 
+
+![image](https://github.com/user-attachments/assets/67644467-5b6d-4077-b961-9d89a736edf5)
+
+
+
+## Schritt 10: Testen:
 
   * deployment löschen und im interface nachschauen 
 
