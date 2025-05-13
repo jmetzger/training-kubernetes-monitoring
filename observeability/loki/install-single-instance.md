@@ -18,6 +18,7 @@ Damit wird dein Projekt im Home-Verzeichnis (`~/loki-single`) angelegt.
 cat <<EOF > values.yaml
 loki:
   enabled: true
+  auth_enabled: false # nur für testing, für produktion true, aber weitere Einstellungen notwendig
 
 promtail:
   enabled: true
@@ -42,7 +43,7 @@ EOF
 
 ---
 
-## 🥉 Schritt 3: `install.sh` Skript erstellen
+## 🥉 Schritt 3: Installieren 
 
 ```bash
 helm repo add grafana https://grafana.github.io/helm-charts
